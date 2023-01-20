@@ -1,19 +1,14 @@
 const config = {
-  agent: '0x336252602b3a8a0be336ed942228305173e8082b',
-  voting: '0x92462953792d3e84af56edfc74d93e5885d38cc0',
-  networkId: 1,
-  transactions: [
+  agent: '0xdd720d1f98a2d661bda2422b4384a2df0722aaf8', //Changed
+  voting: '0x0a690f5e089cff1c707f3348a468cd2d4ec35dbc', //Changed
+  networkId: 5,
+  transactions: [ //dissect and figure out this part
     {
-      to: '0x333A4823466879eeF910A04D473505da62142069', // NATION
-      signature: 'transfer(address,uint256)',
-      args: ['0x47d80912400ef8f8224531EBEB1ce8f2ACf4b75a', '42069'],
-    },
-    {
-      to: '0x333A4823466879eeF910A04D473505da62142069', // NATION
-      signature: 'transfer(address,uint256)',
-      args: ['0x0533F9d586ABd3334a0E90cA162602D6574F0493', '42069'],
+      to: '0xda63076f958d664c6e2cced7435a47f0122ace97', //contract you're interacting with, if interacting with tokens, 
+      signature: 'mint(address,uint256)', //Changed to mint function
+      args: ['0x75FAA463C11E97304770b06F3A798776315b8C6f', '1'], //Set to take my address, and to mint 1 token
     },
   ],
 };
-
+//This scripts allows, if you have a token, allows you to command agent to do something
 export default config;

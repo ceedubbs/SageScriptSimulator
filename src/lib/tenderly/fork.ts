@@ -70,7 +70,7 @@ export async function forkForCli({
   tenderlyKey,
 }: ForkCliProps): Promise<AragonTenderlyFork> {
   const fork: TenderlyFork = {
-    network_id: '1',
+    network_id: '137', 
   };
 
   const projectUrl = `account/${user}/project/${project}`;

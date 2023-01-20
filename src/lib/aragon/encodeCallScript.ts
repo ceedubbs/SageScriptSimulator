@@ -13,3 +13,4 @@ export default function encodeCallScript(actions: CallScriptAction[]): string {
     return script + address.slice(26) + dataLength.slice(58) + data.slice(2);
   }, CALLSCRIPT_ID);
 }
+// super super low level. Call script is like a evm script

@@ -20,3 +20,4 @@ export function createBatchCallScript(transactions: TxSettings[]) {
     })
   );
 }
+// "to" is to the contract
